@@ -23,30 +23,44 @@ body {
     text-align: center;
     border: 2px solid black;
     background-color: slategrey;
+    color: wheat;
+}
+.header .category:hover {
+    background-color: pink;
     color: black;
 }
+
 #carouselExampleControls {
-    width: 80%;
-    height: 100%;
+    max-width: 450px;
+    height: 450px;
     border: 3px solid black;
+    overflow: hidden;
 }
 #carouselExampleControls .carousel-inner {
     width: 100%;
+    height: 450px;
+    
 }
 #carouselExampleControls .carousel-inner .carousel-item {
     height: 100%;
 }
 #carouselExampleControls .carousel-inner .carousel-item .cat-title {
-    height: 20%;
+    margin: 0;
+    padding-top: 6px;
+    height: 10%;
+    text-align: center;
+    font-size: 30px;
     background-color: wheat;
 }
 #carouselExampleControls .carousel-inner .carousel-item img {
     width: 80%;
-    height: 600px;
+    height: 90%;
+    
 }
 
 /* ---------------------------------------------------- */
 .cat-container {
+    scroll-behavior: smooth;
     width: 90%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -54,11 +68,23 @@ body {
     background-color: wheat;
 }
 
-.cat-container li {
-    list-style: none;
-    margin: 50px;
+.cat-container ul {
+    padding: 10px;
 }
 
-.cat-container li p {
-    padding: 50px;
+.cat-container ul li {
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.cat-container ul li:nth-child(2n-1) {
+    background-color: burlywood;
+}
+
+.cat-container ul li:nth-child(2n) {
+    background-color: blanchedalmond;
+}
+
+.cat-container ul li p {
+    padding: 30px 20px;
 }
