@@ -1,7 +1,6 @@
 body {
   background-color: mintcream;
 }
-
 .menu * {
   display: inline;
 }
@@ -53,4 +52,14 @@ body {
 
 .profile img {
   border-radius: 30%;
+}
+
+#carouselExampleControls {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}
+
+#video img {
+  width: 1000px;
 }
