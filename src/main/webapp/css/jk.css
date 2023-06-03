@@ -22,12 +22,21 @@ body {
     padding-top: 10px;
     text-align: center;
     border: 2px solid black;
-    background-color: slategrey;
-    color: wheat;
+    background-color: #7ad6cc;
+    color: #237168;
 }
 .header .category:hover {
     background-color: pink;
+    color: white;
+}
+
+.header .category #scroll_move {
+    text-decoration: none;
     color: black;
+}
+
+.header .category #scroll_move:hover {
+    color: #237168;
 }
 
 #carouselExampleControls {
