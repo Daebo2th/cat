@@ -1,17 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
     <link href="../css/jiyeoncat.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script> 
+    <script src="../js/jiyeoncat.js" defer></script>
 </head>
 <body>
     <h1 id="titlename2" > 저를 소개할게요! </h1>
     
-    <div id ="circle" align="center">
-        <img id ="cat" src="../img/샴.png">
+    <div id ="square" align="center">
+        <img id ="cat" onclick="changeImage()" src="샴.gif" >
 
     </div>
     <table align="center">
@@ -42,8 +44,8 @@
             <td id="ex" colspan="5">질투심이 높아 다른 동물들과 지내면 질투심을 느껴 불만을 표출할 수 있다!</td>
         </tr>
     </table>
-
-    <button type="button" class="btn" onClick="">처음으로 이동</button>
-
+    <!-- 여기 추가함-->
+    <button type="button" href="../category/jh_main" id="btn" onClick="location.href='jiyeoncat.html';">처음으로 이동</button>
+    <div id="tooltip_layer">가시기전에 저를 눌러보세요!</div>
 </body>
 </html>

@@ -2,54 +2,34 @@
 body{
     margin: 0;
     background-color: blanchedalmond;
-    background: url('../img/고양이 소개 배경1.png') no-repeat center fixed;
+    background: url('고양이\ 소개\ 배경1.png') no-repeat center fixed;
     background-size : 100% 100%;
     height: 100vh;
     width: 100vw;
 }
+
 #titlename1 {
         font-size: 50px;
         color: rgb(235, 182, 24);     
-        text-align: center;       
+        text-align: center; 
+        margin-top: 10px;      
 }
 
 #titlename2 {
     font-size: 50px;
     color: #eb4d18;     
-    text-align: center;       
+    text-align: center;  
+    margin-top: 10px;      
 }
 span {
     margin: auto;
 }
 
-.btn{
-    width: 200px;
-    margin: auto;
-    display: block;
-    box-shadow: 0px 10px 14px -7px #84d16f;
-    background-color:#8cd19f;
-    border-radius:8px;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #469e39;
-}
-.btn:hover {
-	background:linear-gradient(to bottom, #76ad58 5%, #8cd19f 100%);
-	background-color:#76ad58;
-}
-.btn:active {
-	position:relative;
-	top:1px;
-}
 
-#circle{
+#square{
     width: 350px;
     height: 350px;
-    border-radius: 20%;
+    border-radius: 15%;
     background-color: rgb(255, 230, 212);
     margin-left: auto;
     margin-right: auto;
@@ -57,14 +37,15 @@ span {
 }
 
 #cat {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    
 }
-#cat:hover {
-    transform: rotatey( 180deg );
+#cat2 {
+    width: 100%;
+    height: 100%;
+    
 }
-
 table{
     padding: 30px;
 }
@@ -86,4 +67,42 @@ td{
     border: 3px solid #ece8e8;
     width: 260px; 
     background-color: white;
+}
+
+#btn {
+    width:200px;
+    height:60px;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 10px 14px -7px #84d16f;
+    background-color:#8cd19f;
+    border-radius:8px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #469e39;
+}
+
+#btn:hover {
+	background:linear-gradient(to bottom, #76ad58 5%, #8cd19f 100%);
+	background-color:#76ad58;
+}
+#btn:active {
+	position:relative;
+	top:1px;
+}
+#tooltip_layer {
+    display:none;
+    width: 330px;
+    height:100px;
+    margin-top:5px;
+    padding:10px;
+    font-weight:bold;
+    border-radius:10px;
+    margin: auto;
+    font-size:25px;
+    color: rgb(134, 39, 80);
 }

@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="../css/jiyeoncat.css" rel="stylesheet">
     <title>Document</title>
-    <link href="jiyeoncat.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script> 
+    <script src="../js/jiyeoncat.js" defer></script>
 </head>
 <body>
+
     <h1 id="titlename1">저를 소개할게요!</h1>
-    <div id ="circle" align="center">
-        <img id ="cat" src="페르시안.png">
+    <div id ="square" align="center">
+        <img id ="cat2" onclick="changeImages()" src="페르시안.gif">
     </div>
     <table align="center">
         <tr>
@@ -40,8 +43,9 @@
             <td id="ex" colspan="5">가늘고 고운 속털은 잘 뭉치기 때문에 반드시 매일 빗질 필수!</td>
         </tr>
     </table>
-
-    <button type="button" class="btn" onClick="">처음으로 이동</button>
-
+        
+        <button type="button" href="../category/jh_main" id="btn" onClick="location.href='jiyeoncat.html';">처음으로 이동</button>
+        <div id="tooltip_layer">가시기전에 저를 눌러보세요!</div>
+        
 </body>
 </html>
