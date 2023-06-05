@@ -1,5 +1,9 @@
 body {
-    background-color: #fafafa;
+    background-color: #fafafa; 
+    background: url('../img/bg.png') no-repeat center fixed;
+    background-size: 100% 100%;
+    margin-top: 50px;
+    overflow: hidden
   }
   .main_body {
     display: flex;
@@ -7,17 +11,14 @@ body {
     text-align: center;
     justify-content: center;
     left: 20px;
-    background: url('../img/bg.png') no-repeat center fixed;
-      background-size: 100% 100%;
-      height: 100vh;
-      width: 100vw;
+   
   }
   .feed {
     width: 600px;
     height: auto;
     margin: auto;    
     background-color: white;
-    border: 1px solid #dbdbdb;
+    border: 1px solid #c6c6c6;
     border-radius: 3px;
   }
   .feed_id {
@@ -27,15 +28,18 @@ body {
     height: 60px;
     font-size: xx-large;
     font-family: 'Lobster', cursive;
+    padding-top: 10px;
   }
   .feed_picture {
     width: 598px;
     height: 598px;
+  
   }
   .feed_picture img {
-    width: 598px;
+    width: 600px;
     height: 598px;
     object-fit: cover;
+
   }
   .emoticon {
     display: flex;
