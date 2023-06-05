@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>mangostargram</title>
+  <link href="../css/jh_kor.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main_body">
+      
+    <!-- 피드 전체-->
+      <div class="feed">
+        
+        <!--피드-->
+        <div class="feed_id">mangostagram</div>
+          <div class="feed_picture">
+            <img src="../img/mango.jpg" alt="피드 사진">
+          </div>
+        
+        <!--하단 emotion-->
+        <div class="feed_bottom">
+          <div class="emoticon">
+            <div class="emoticon2">
+              <div>
+                  <button class = btn> 
+                    <img src="../img/heart.png" alt="하트">
+                  </button>
+              </div>
+              <div>
+                <img src="../img/comment.png" alt="코멘트" />
+              </div>
+              <div>
+                <img src="../img/direct.png" alt="전달" />
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- 피드 하단 -->
+          <div class="comment">
+            <div class="id">mango </div> 
+          </div>
+          <div class="context">코숏 이라는 말 들어보셨나요? 정확한 명칭은 코리안숏헤어(Korean short hair)로 <br>우리나라 고양이를 뜻하고, 짧게 코숏이라고 부르기도 합니다.
+              모색에 따라서 고등어태비, 삼색이, 치즈태비, 카오스, 올블랙, 턱시도 등으로 종류를 나눠서 부르기도 하며,
+              특정지을 수 없을 정도로 다양한 성격과 외모를 가지고 있습니다
+          </div>
+      </div>
+  </div>
+
+
+<script>
+  var buttons = document.getElementsByClassName("btn");
+  var isHeart2 = false;
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+      var button = this;
+      var img = button.getElementsByTagName("img")[0];
+    
+    if (isHeart2) {
+      img.src = "../img/heart.png";
+      isHeart2 = false;
+    } else {
+      img.src = "../img/heart2.png";
+      isHeart2 = true;
+    }
+  });
+}
+</script>
+</body>
+</html>
