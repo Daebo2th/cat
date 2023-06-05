@@ -30,11 +30,11 @@ $(document).ready(function(){
   }
 
 function changeImage() {
-    document.getElementById('cat').src = "피아노샴.gif";
+    document.getElementById('cat').src = "../img/피아노샴.gif";
 }
 
 function changeImages() {
-    document.getElementById('cat2').src = "페르시안2.gif";
+    document.getElementById('cat2').src = "../img/페르시안2.gif";
 }
 
 
