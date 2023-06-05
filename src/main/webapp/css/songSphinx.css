@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*  */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+}
+header ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .intro {
+  margin: 0 auto;
+}
+
+.cat_video {
+  width: 100%;
+}
